@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/userLoginTitleTv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="25sp"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"/>
+    <Button
+        android:id="@+id/dialogBtnAddTask"
+        android:layout_below="@id/userLoginTitleTv"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:text="Add Task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragOPDBillingListRecyclerView"
+        android:layout_above="@id/logoutBtn"
+        android:layout_below="@id/dialogBtnAddTask"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/logoutBtn"
+        android:text="Logout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
